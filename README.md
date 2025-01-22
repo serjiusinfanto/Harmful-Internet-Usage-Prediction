@@ -54,4 +54,4 @@ With the increasing prevalence of internet dependency, particularly among adoles
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/piu-detection.git
+   git clone https://github.com/serjiusinfanto/Harmful-Internet-Usage-Prediction.git
