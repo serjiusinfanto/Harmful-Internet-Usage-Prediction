@@ -55,3 +55,8 @@ With the increasing prevalence of internet dependency, particularly among adoles
 1. Clone the repository:
    ```bash
    git clone https://github.com/serjiusinfanto/Harmful-Internet-Usage-Prediction.git
+
+## Future Enhancements
+* Incorporating sentiment analysis from internet usage questionnaires for more nuanced predictions.
+* Expanding the dataset to include diverse demographic groups for generalization.
+* Building an interactive dashboard to visualize PIU trends and provide personalized recommendations.
