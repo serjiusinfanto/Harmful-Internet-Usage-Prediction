@@ -1,55 +1,57 @@
-
----
-
-### GitHub README for **Problematic Internet Usage Detection**
-
-```markdown
 # Problematic Internet Usage Detection
 
 ## Overview
-This project predicts the severity of Problematic Internet Usage (PIU) among teenagers using machine learning models. By analyzing features like physical activity, sleep patterns, and internet usage, the system classifies PIU into four severity levels: None, Mild, Moderate, and Severe.
+This project explores the early detection of Problematic Internet Usage (PIU) among teenagers using machine learning techniques. By analyzing behavioral, physical, and demographic data, the project aims to classify the severity of PIU and provide actionable insights to mitigate mental, physical, and social risks.
+
+## Motivation
+With the increasing prevalence of internet dependency, particularly among adolescents, PIU is linked to mental health issues like anxiety and depression, physical health concerns such as obesity, and social development challenges. This project seeks to identify early indicators of PIU, enabling timely interventions to promote healthier digital habits.
 
 ## Features
-- **Classification Models**:
+- **Severity Classification**: Predicts PIU levels (`None`, `Mild`, `Moderate`, `Severe`) based on the Severity Impairment Index (SII).
+- **Machine Learning Models**:
   - Logistic Regression
   - Support Vector Machine (SVM)
   - Random Forest Classifier
-- **Class Imbalance Handling**: Used SMOTE to oversample minority classes.
-- **Feature Selection**: Boruta algorithm selected 33 significant features.
-- **Preprocessing**:
-  - KNN imputation for missing values
-  - Outlier detection and handling
-  - Correlation analysis for feature relationships
+- **Data Preprocessing**:
+  - Handled missing values using KNN imputation.
+  - Addressed class imbalance with SMOTE.
+  - Selected 33 key features using the Boruta feature selection algorithm.
+- **Evaluation Metrics**:
+  - Quadratic Weighted Kappa (QWK)
+  - Accuracy, Precision, Recall, and F1-Score
 
 ## Dataset
 - **Source**: Healthy Brain Network Dataset
-- **Details**:
-  - 5,000 participants (training) and 3,800 participants (testing)
-  - 81 features, including BMI, sleep disturbances, and internet usage behavior
+- **Key Details**:
+  - Participants: 5,000 (training), 3,800 (testing), aged 5–22 years
+  - Features: 81, including physical activity, sleep patterns, BMI, and internet usage behaviors
+  - Target Variable: SII (categorized into four severity levels)
 
-## Key Technologies
+## Technologies Used
 - **Programming Languages**: Python
 - **Libraries**:
-  - Pandas, NumPy, Scikit-learn
-  - SMOTE for class imbalance
-  - Boruta for feature selection
-- **Evaluation Metrics**:
-  - Accuracy
-  - Precision, Recall, F1-score
-  - Quadratic Weighted Kappa (QWK)
+  - Pandas, NumPy for data preprocessing
+  - Scikit-learn for model training, evaluation, and feature selection
+  - KNN Imputer for handling missing values
+  - SMOTE for oversampling minority classes
+- **Visualization**:
+  - Correlation heatmaps and feature importance plots
+- **Evaluation Tools**:
+  - QWK and classification metrics to assess model performance
 
 ## Results
-- **Best Model: Random Forest Classifier**
+- **Random Forest Classifier**:
   - Accuracy: 99.43%
   - QWK Score: 0.9953
-  - Precision/Recall/F1-score: 0.99 (macro average)
+  - Precision/Recall/F1-Score: 0.99 (macro average)
+- **Support Vector Machine (SVM)**:
+  - Accuracy: 95.65%
+  - QWK Score: 0.9624
+- **Logistic Regression**:
+  - Accuracy: 93.76%
+  - QWK Score: 0.94
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/serjiusinfanto/Harmful-Internet-Usage-Prediction.git
-
-## Future Enhancements
-1. Incorporating sentiment analysis to refine predictions
-2. Expanding the dataset to include more diverse demographic groups
-3. Developing an interactive dashboard for visualizing PIU trends
+   git clone https://github.com/your-username/piu-detection.git
