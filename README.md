@@ -41,8 +41,8 @@ With the increasing prevalence of internet dependency, particularly among adoles
 
 ## Results
 - **Random Forest Classifier**:
-  - Accuracy: 99.43%
-  - QWK Score: 0.9953
+  - Accuracy: 95%
+  - QWK Score: 0.9753
   - Precision/Recall/F1-Score: 0.99 (macro average)
 - **Support Vector Machine (SVM)**:
   - Accuracy: 95.65%
